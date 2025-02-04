@@ -4,49 +4,55 @@
     <meta charset="utf-8" />
     <title>Ch2. View Soure</title>
     <style>
-        h1 {
-            color: palevioletred;
-        }
-        body {
-            background-color: peachpuff;
-        }
-        p {
-            color: darkorchid;
-            font-size: 20px;
-        }
-        .fancy {
-            color: darkred;
-            font-size: 100px;
-            font-family: 'Snell Roundhand', cursive;
-            margin-top: -30px;
-            margin-bottom: -30px;
-        }
-        .diff {
-            color:aquamarine;
-            font-size: 60px;
-            font-family: ;
-        }
-        .work {
-            color: gray;
-            font-size: 50px;
-            font-family: 'Optima', sans-serif;
-            font-variant: small-caps;
-            font-weight: 900;
-        }
+      h1 {
+        color: palevioletred;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: peachpuff;
+      }
+      p {
+        color: darkorchid;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .fancy {
+        color: darkred;
+        font-size: 100px;
+        font-family: American Typewriter, serif;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        
+      }
+      .diff {
+        color: lightcyan;
+        font-size: 70px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 3px;
+        transform: rotate(45deg);
+      }
+      .work {
+        color: gray;
+        font-size: 50px;
+        font-family: "Optima", sans-serif;
+        font-variant: small-caps;
+        font-weight: 900;
+        letter-spacing: 6px;
+      }
     </style>
   </head>
   <body>
     <h1>The</h1>
     <h1 class="fancy">art</h1>
     <h1>is not something you</h1>
-    <h1>apply</h1>
-    <h1>to your</h1> 
-    <h1 class="work">work</h1>
+    <h1 class="diff" style="transform: rotateY(50deg); rotate: -1deg;">apply</h1>
+    <h1>to your <span class="work">work</span></h1>
     <h1 class="fancy">The art</h1>
-    <h1>is the <span class="diff">way</span>you do your <span class="work">work,</span></h1>
+    <h1>
+      is the <span class="diff" style="transform: rotate(10deg); display: inline-block;">way</span> you do your
+      <span class="work">work,</span>
+    </h1>
     <h1>a result of your attitude toward it</h1>
-    <p>
-        - Charles Eames: Advice for Students
-    </p>
+    <p>- Charles Eames: Advice for Students</p>
   </body>
 </html>
