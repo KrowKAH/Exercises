@@ -3,7 +3,7 @@
   <html>
     <head>
       <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Go Fish</title>
       <link rel="stylesheet" href="styles.css" />
 
@@ -139,7 +139,7 @@
           margin-left: -9vw;
           color: black;
           font-weight: bold;
-          font-size: 350%;
+          font-size: clamp(16px, 7vw, 80px);
         }
         .contain {
           display: flex;
@@ -158,6 +158,7 @@
           height: auto;
           cursor: pointer;
           transition: transform 0.5s ease-in-out;
+          overflow: hidden;
         }
         #displayContent {
           display: flex;
@@ -171,6 +172,7 @@
           transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
           opacity: 0;
           flex-direction: row;
+          overflow: hidden;
         }
         .left-text {
           font-size: 160%;
@@ -219,6 +221,24 @@
         </div>
       </div>
       <script>
+        let screenWidth = window.innerWidth;
+        let screenHeight = window.innerHeight;
+
+        let animationSpeed = screenWidth < 600 ? "2s" : "4s";
+        document.documentElement.style.setProperty(
+          "--animation-speed",
+          animationSpeed
+        );
+        window.addEventListener("resize", () => {
+          screenWidth = window.innerWidth;
+          screenHeight = window.innerHeight;
+
+          document.getElementById("container").style.width = `${screenWidth}px`;
+          document.getElementById(
+            "container"
+          ).style.height = `${screenHeight}px`;
+        });
+
         const volumeButton = document.getElementById("volumeButton");
         const volumeSlider = document.getElementById("volumeSlider");
         const musicPlayer = document.getElementById("musicPlayer");
