@@ -85,14 +85,18 @@ $ git reset --hard HEAD~3
         }
         #volumeControl {
           position: absolute;
-          top: 4vh;
-          right: 1vw;
+          top: 50px;
+          right: 10px;
           display: flex;
           flex-direction: column;
           align-items: center;
         }
         #volumeButton {
+<<<<<<< HEAD
           width: 7vw;
+=======
+          width: 70px;
+>>>>>>> parent of 15ea2ea (Add files via upload)
           cursor: pointer;
         }
         #volumeSlider {
@@ -133,17 +137,15 @@ $ git reset --hard HEAD~3
           bottom: 5%;
         }
         .main {
-          display: flex;
           position: fixed;
           top: 10%;
           left: 45%;
-          margin-left: -9vw;
+          margin-left: -80px;
           color: black;
           font-weight: bold;
-          font-size: 350%;
+          font-size: 50px;
         }
         .contain {
-          display: flex;
           position: fixed;
           top: 50%;
           left: 50%;
@@ -155,7 +157,7 @@ $ git reset --hard HEAD~3
           top: 50%;
           left: 50%;
           transform: translate(-50%, -40%) rotate(-30deg);
-          width: 38vw;
+          width: 550px;
           cursor: pointer;
           transition: transform 0.5s ease-in-out;
         }
@@ -173,24 +175,24 @@ $ git reset --hard HEAD~3
           flex-direction: row;
         }
         .left-text {
-          font-size: 160%;
+          font-size: 25px;
           font-weight: bold;
           color: azure;
           text-align: center;
-          width: 15vw;
+          width: 200px;
           position: relative;
         }
         #displayContent img {
           margin: 0 auto;
-          height: 40vh;
+          height: 500px;
           pointer-events: none;
         }
         #displayContent p {
-          font-size: 200%;
+          font-size: 30px;
           font-weight: bold;
           color: azure;
           text-align: center;
-          padding: 2vh;
+          padding: 20px;
           border-radius: 10px;
           background: rgba(0, 0, 0, 0.5);
           backdrop-filter: blur(10px);
@@ -344,7 +346,7 @@ $ git reset --hard HEAD~3
         fishingPole.addEventListener("click", () => {
           if (!isUp) {
             fishingPole.style.transform =
-              "translate(-50%, -42vh) rotate(-30deg)";
+              "translate(-50%, -530px) rotate(-30deg)";
             displayContent.style.transform = "translate(-50%, -30%)";
             displayContent.style.opacity = "0";
 
@@ -360,7 +362,7 @@ $ git reset --hard HEAD~3
             displayContent.style.display = "block";
             setTimeout(() => {
               displayContent.style.transform =
-                "translate(-50%, -30%) translateY(-8vh)";
+                "translate(-50%, -30%) translateY(-100px)";
               displayContent.style.opacity = "1";
             }, 10);
           } else {
